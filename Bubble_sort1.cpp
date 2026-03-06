@@ -45,3 +45,21 @@ void display()
          cout << "Data ke - " << i << " : " << a[i] << endl;
     }
 }
+
+void bubbleSort()
+{
+    cout << "\n===============================" << endl;
+    cout << "Hasil setiap Pass" << endl;
+    cout << "===============================" << endl;
+    for (int pass = 1; pass <n; pass++)
+    {
+        for (int j = 0; j <= n - 1 - pass; j++)
+
+        {
+            if (a[j] > a[j + 1])
+            {
+                int temp = a[j];
+                a[j] = a[j +1];
+                a[j + 1] = temp;
+            }
+        }
