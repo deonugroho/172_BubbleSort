@@ -63,3 +63,12 @@ void bubbleSort()
                 a[j + 1] = temp;
             }
         }
+
+        cout << "Pass ke - " << pass << ":\t";
+        for (int k = 0; k < n; k++)
+        {
+            cout << a[k] << "\t ";
+        }
+        cout << endl;
+    }
+}
